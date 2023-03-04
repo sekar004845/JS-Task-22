@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background colour and Proverb-JavaScript</title>
+	<style>
+	#con{
+	background-color:red;
+	padding:50px;
+	text-align:center;
+	color:white;
+	font-size:90px;
+	}
+	</style>
+</head>
+<body>
+     <h1>Click the button the Proverb will change with background colour</h1>
+     <button id="btn">CLICK ME</button>
+	 <div id="con"></div>
+	 <script>
+   
+   
+   let body=document.querySelector("body");
+   let proverb1Array=["Honesty is the best policy","Don't judge a book by its cover","Actions speak louder than words","Blood is thicker than water"]
+   body.addEventListener("click",proverb2);
+   function proverb2(){
+   let connect = document.querySelector("#con");
+   let a=parseInt (Math.random()*proverb1Array.length); 
+   connect.innerHTML=proverb1Array[a];
+   
+   }
+   
+   </script>
+   
+</body>
+</html>
+
+
+
+
+
+
